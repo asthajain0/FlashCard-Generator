@@ -18,13 +18,13 @@ const FlashCard = ({ question, answer }) => {
       >
         {/* Front */}
         <div
-          className="absolute w-full h-full bg-blue-900 rounded-xl shadow-md flex flex-col items-center justify-center p-5"
+          className="absolute w-full h-full bg-blue-900 rounded-xl shadow-md flex flex-col items-center justify-center p-2 md:p-5"
           style={{
             backfaceVisibility: 'hidden',
           }}
         >
-          <p className="text-xl font-semibold text-white text-center">{question}</p>
-          <p className='text-pink-100 ml-40 mt-30 text-xs'>Click to view Answer</p>
+          <p className="text-lg md:text-xl font-semibold text-white text-center">{question}</p>
+          <p className='text-pink-100 ml-15 md:ml-40 mt-30 text-xs'>Click to view Answer</p>
         </div>
         
         {/* Back */}
@@ -35,7 +35,7 @@ const FlashCard = ({ question, answer }) => {
             backfaceVisibility: 'hidden',
           }}
         >
-          <p className="text-lg text-center">{answer}</p>
+          <p className="text-sm md:text-lg text-center">{answer}</p>
         </div>
       </div>
     </div>

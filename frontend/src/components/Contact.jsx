@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div id='contact' className='bg-[linear-gradient(to_top,#01194e_20%,#000)] py-20 px-4 h-full'>
-        <div className='text-center text-6xl text-white font-bold'>Contact Us</div>
+        <div className='text-center text-4xl md:text-6xl text-white font-bold'>Contact Us</div>
 
         <div className='bg-white/5 p-10 m-10  rounded-2xl max-w-[550px] mx-auto'>
             <form className='space-y-8' action="https://getform.io/f/ajjolxma" method='POST'>

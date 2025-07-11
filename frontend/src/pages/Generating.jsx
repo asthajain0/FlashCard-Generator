@@ -15,9 +15,9 @@ const Generating = () => {
   }, [flashcards]);
 
   return (
-    <div className="p-12 h-full bg-gradient-to-r from-white via-blue-200 to-blue-500
+    <div className="p-4 md:p-12 h-full bg-gradient-to-r from-white via-blue-200 to-blue-500
 ">
-      <NavLink to="/" className="text-2xl font-bold text-[#01194e]">
+      <NavLink to="/" className="text-lg md:text-2xl font-bold text-[#01194e]">
         FlashGen
       </NavLink>
 
@@ -25,7 +25,7 @@ const Generating = () => {
 
       {flashcards.length > 0 && (
         <div ref={flashcardRef} className="mt-10">
-          <h3 className="text-3xl text-blue-950 font-semibold mb-4 text-center">Flashcards</h3>
+          <h3 className="text-lg md:3xl text-blue-950 font-semibold mb-4 text-center">Flashcards</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {flashcards.map((flash, index) => (
               <FlashCard
