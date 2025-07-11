@@ -1,4 +1,5 @@
 import { FaArrowCircleRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -9,9 +10,9 @@ const Hero = () => {
         <div className='text-2xl mx-5 text-center text-white'>
             Quickly generate smart flashcards from your notes and study more efficiently with active recall and spaced repetition.
         </div>
-        <button className="w-45 mx-auto flex items-center gap-2 px-5 py-2 text-xl font-semibold rounded-2xl bg-white text-pink-800 hover:bg-gray-200 transition">
+        <NavLink to='/generate' className="w-45 mx-auto flex items-center gap-2 px-5 py-2 text-xl font-semibold rounded-2xl bg-white text-pink-800 hover:bg-gray-200 transition">
             Get Started <FaArrowCircleRight />
-        </button>
+        </NavLink>
     </div>
   )
 }

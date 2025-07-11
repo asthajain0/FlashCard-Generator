@@ -8,7 +8,7 @@ const DashNavbar = () => {
     <div>
         <Navbar>
             <Container className='flex justify-between p-10'>
-                <Navbar.Brand href="#home" className='text-2xl text-white font-bold'>FlashGen</Navbar.Brand>
+                <Navbar.Brand className='text-2xl text-white font-bold'>FlashGen</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="flex align-middle gap-3 justify-center ml-7">
